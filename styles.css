@@ -1,0 +1,97 @@
+:root {
+  --primary: #0f1f39;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --bg: #ffffff;
+  --border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.hero {
+  background: var(--primary);
+  color: white;
+  padding: 3rem 1.5rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.hero h2 {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.subtitle {
+  opacity: 0.85;
+}
+
+h3 {
+  margin-top: 3rem;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.4rem;
+}
+
+h4 {
+  margin-top: 1.5rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+.role {
+  font-style: italic;
+  color: var(--muted);
+}
+
+.note {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.emphasis {
+  font-weight: 600;
+}
+
+.contact a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+@media print {
+  body {
+    font-size: 11pt;
+  }
+  .hero {
+    background: none;
+    color: black;
+    padding: 0;
+  }
+}
